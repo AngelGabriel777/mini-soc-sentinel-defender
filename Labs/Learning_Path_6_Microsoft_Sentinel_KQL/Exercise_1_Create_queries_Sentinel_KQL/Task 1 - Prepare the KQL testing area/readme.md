@@ -86,6 +86,8 @@ En el panel izquierdo del editor revisar la sección Tablas y confirmar la exist
 - SecurityAlert  
 - SecurityIncident  
 
+![Descripción de la imagen](images/img4.jpg)
+
 ---
 
 ### 3.7 Validación de Datos
@@ -98,4 +100,5 @@ SigninLogs
 ```
 
 ![Descripción de la imagen](images/img3.jpg)
+
 
