@@ -55,6 +55,8 @@ Validar la correcta configuración del entorno de trabajo en Microsoft Sentinel,
 
    Microsoft Sentinel | Records  
    Selected workspace: "law-sentinel-lab"
+   
+![Descripción de la imagen](images/img1.jpeg)
 
 ---
 
@@ -70,6 +72,8 @@ Validar la correcta configuración del entorno de trabajo en Microsoft Sentinel,
    Modo KQL
 
 3. Si aparece "Modo simple", cambiar manualmente a Modo KQL.
+
+![Descripción de la imagen](images/img2.jpeg)
 
 ---
 
@@ -92,3 +96,5 @@ En el editor KQL ejecutar la siguiente consulta:
 SigninLogs
 | take 10
 ```
+
+![Descripción de la imagen](images/img3.jpeg)
