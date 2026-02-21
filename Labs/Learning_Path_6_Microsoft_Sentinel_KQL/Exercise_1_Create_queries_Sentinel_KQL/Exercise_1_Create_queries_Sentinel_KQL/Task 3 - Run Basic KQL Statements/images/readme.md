@@ -49,6 +49,8 @@ Debido a que el entorno no contiene la tabla `SecurityEvent_CL` del laboratorio 
 search "Microsoft"
 ```
 
+![Acceso al área de registros](images/img1.jpg)
+
 **Descripción:**
 Busca la palabra "Microsoft" en todas las columnas de todas las tablas disponibles.
 
@@ -75,6 +77,8 @@ SigninLogs
 | where TimeGenerated > ago(7d)
 ```
 
+![Acceso al área de registros](images/img1.jpg)
+
 **Descripción:**
 Filtra registros generados en los últimos 7 días.
 
@@ -87,6 +91,9 @@ SigninLogs
 | where TimeGenerated > ago(7d)
 | where ResultType == 0
 ```
+
+![Acceso al área de registros](images/img1.jpg)
+
 
 **Descripción:**
 Filtra inicios de sesión exitosos (`ResultType == 0`) en los últimos 7 días.
@@ -189,3 +196,4 @@ LowActivityUsers
 Durante esta tarea se aplicaron sentencias básicas en KQL dentro del workspace `law-sentinel-lab` en Microsoft Sentinel.
 
 Se utilizaron operadores fundamentales como `search`, `where`, `in` y `let`, así como estructuras dinámicas con `datatable` y `summarize`, demostrando comprensión práctica del lenguaje KQL para análisis de registros en entornos de seguridad.
+
