@@ -33,6 +33,7 @@ Explorar el espacio de trabajo de análisis de registros en Microsoft Sentinel, 
 3. Elegir el espacio de trabajo:
 
    defenderWorkspace
+![Acceso al área de registros](images/img1.jpg)
 
 ---
 
@@ -44,6 +45,9 @@ Explorar el espacio de trabajo de análisis de registros en Microsoft Sentinel, 
 
 2. Cerrar la ventana emergente de Log Analytics si aparece.
 3. Cerrar el Centro de consultas para trabajar directamente en el editor.
+
+
+![Acceso al área de registros](images/img2.jpg)
 
 ---
 
@@ -60,6 +64,8 @@ Explorar el espacio de trabajo de análisis de registros en Microsoft Sentinel, 
 3. Confirmar que el filtro de resultados esté configurado en:
 
    Mostrar: 1000 resultados
+
+![Acceso al área de registros](images/img3.jpg)
 
 ---
 
