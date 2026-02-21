@@ -1,110 +1,87 @@
 # TALLER 2  
-# Exploración del Log Analytics Workspace en Microsoft Sentinel 
+# Exploración del Espacio de Trabajo de Análisis de Registros en Microsoft Sentinel (Interfaz 2026)
 
 ---
 
 ## 1. Objetivo
 
-Explorar el Log Analytics Workspace dentro de Microsoft Sentinel, validar el acceso al editor KQL, revisar las tablas disponibles y ejecutar una consulta de prueba para confirmar la visualización de registros.
+Explorar el espacio de trabajo de análisis de registros en Microsoft Sentinel, familiarizándose con la interfaz del editor KQL, el esquema de tablas disponibles y la ejecución de consultas básicas sobre datos de ejemplo.
 
 ---
 
 ## 2. Entorno de Trabajo
 
-- Portal: https://portal.azure.com  
+- Plataforma: Microsoft Azure Portal  
 - Servicio: Microsoft Sentinel  
-- Workspace: law-sentinel-lab  
-- Interfaz visible: Microsoft Sentinel | Records  
+- Workspace: defenderWorkspace  
+- Área utilizada: Registros (Log Analytics)
 
 ---
 
-## 3. Procedimiento Paso a Paso
+## 3. Procedimiento
 
 ---
 
-### 3.1 Acceso al Servicio
+### 3.1 Acceso al Servicio Microsoft Sentinel
 
 1. En la barra de búsqueda del portal Azure escribir:
 
    Microsoft Sentinel
 
-2. Seleccionar el servicio.
-3. Elegir el workspace:
+2. Seleccionar el servicio desde los resultados.
+3. En la página principal, elegir el espacio de trabajo:
 
-   law-sentinel-lab
-
-4. Verificar que la parte superior muestre:
-
-   Microsoft Sentinel | Records  
-   Selected workspace: "law-sentinel-lab"
+   defenderWorkspace
 
 ---
 
-### 3.2 Acceso al Editor de Registros
+### 3.2 Acceso al Área de Registros
 
-1. En el panel izquierdo expandir:
+1. En el menú de navegación izquierdo expandir la sección:
 
    General
 
 2. Seleccionar:
 
-   Records
+   Registros
+
+3. Cerrar la ventana emergente de video de Log Analytics si aparece.
+4. Cerrar el Centro de consultas para trabajar directamente en el editor.
 
 ---
 
-### 3.3 Cierre de Ventanas Emergentes
+### 3.3 Configuración del Editor en Modo KQL
 
-Si aparecen:
-
-- Ventana emergente de video de Log Analytics → Cerrar.
-- Queries hub → Cerrar.
-
-Esto permite trabajar directamente en el editor KQL.
-
----
-
-### 3.4 Cambio a Modo KQL
-
-1. En la parte superior del editor ubicar el selector de modo.
+1. Ubicar el selector de modo en la parte superior del editor.
 2. Cambiar de:
 
-   Simple mode
+   Modo simple → Modo KQL
 
-   a
-
-   KQL mode
-
-3. Confirmar que el editor permita escribir consultas manuales.
+Esto permite escribir consultas manualmente utilizando el lenguaje Kusto Query Language.
 
 ---
 
-### 3.5 Exploración del Panel de Esquema
+### 3.4 Exploración del Esquema y Panel de Filtros
 
-En el panel izquierdo observar:
+1. En el panel izquierdo observar:
 
-- Lista de tablas disponibles.
-- Campos dentro de cada tabla.
-- Opciones de filtrado y herramientas adicionales.
+   - Esquema (Schema)
+   - Tablas disponibles
+   - Panel de filtros
 
-En la versión 2026 no se encuentra la tabla:
+2. Expandir diferentes tablas para visualizar:
 
-   SecurityEvent_CL
+   - Columnas
+   - Tipos de datos
+   - Herramientas adicionales disponibles
 
-Debido a que la Microsoft Sentinel Training Lab Solution ya no está disponible.
-
-En su lugar se utilizan tablas estándar como:
-
-- SigninLogs  
-- AuditLogs  
-- SecurityAlert  
-- SecurityIncident  
+Esta exploración permite comprender la estructura de los datos almacenados en el workspace.
 
 ---
 
-### 3.6 Ejecución de Consulta (Adaptación 2026)
+### 3.5 Ejecución de Consulta en Tabla Personalizada
 
-En el editor ingresar la siguiente consulta:
+En el editor de consultas, introducir la siguiente consulta:
 
 ```kql
-SigninLogs
-| take 1000
+SecurityEvent_CL
