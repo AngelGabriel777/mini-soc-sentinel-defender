@@ -66,6 +66,7 @@ Explorar el espacio de trabajo de análisis de registros en Microsoft Sentinel, 
    Mostrar: 1000 resultados
 
 ![Acceso al área de registros](images/img3.jpg)
+![Acceso al área de registros](images/img4.jpg)
 
 ---
 
