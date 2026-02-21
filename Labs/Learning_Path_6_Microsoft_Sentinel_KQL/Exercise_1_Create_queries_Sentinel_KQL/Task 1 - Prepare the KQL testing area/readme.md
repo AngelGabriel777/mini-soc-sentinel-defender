@@ -1,46 +1,94 @@
 # 🧪 TALLER 1  
-## Preparación y Validación del Entorno en Microsoft Sentinel (Actualización 2026)
+# Preparación y Validación del Entorno en Microsoft Sentinel (Interfaz 2026)
 
 ---
 
 ## 1. Objetivo
 
-Configurar y validar el entorno de trabajo en Microsoft Sentinel, asegurando:
+Validar la correcta configuración del entorno de trabajo en Microsoft Sentinel, confirmando:
 
-- Acceso correcto al portal de Azure.
-- Selección adecuada del Log Analytics Workspace.
+- Acceso al portal Azure.
+- Selección del workspace correcto.
 - Disponibilidad de tablas con datos.
-- Ejecución exitosa de consultas en modo KQL.
-- Confirmación del funcionamiento del motor de consultas.
+- Funcionamiento del editor en modo KQL.
+- Ejecución exitosa de consultas.
 
 ---
 
-## 2. Alcance
+## 2. Entorno de Trabajo
 
-Este procedimiento aplica al entorno de laboratorio con las siguientes características:
-
-- Máquina virtual: **WIN1**
-- Usuario: **Admin**
-- Workspace: **law-sentinel-lab**
-- Plataforma: Azure Portal (versión actual 2026)
+- Workspace: law-sentinel-lab  
+- Interfaz: Microsoft Sentinel | Records  
+- Portal: https://portal.azure.com  
 
 ---
 
-## 3. Procedimiento Detallado
+## 3. Procedimiento
 
 ---
 
-### 3.1 Acceso a la Máquina Virtual
 
-1. Iniciar la máquina virtual **WIN1**.
-2. Iniciar sesión con:
-   - Usuario: `Admin`
-   - Contraseña: `Pa55w.rd`
-3. Verificar que el sistema operativo cargue correctamente.
+### 3.2 Acceso al Portal Azure
+
+1. Abrir Microsoft Edge.
+2. Ingresar a:
+
+   https://portal.azure.com
+
+3. Autenticarse con las credenciales asignadas.
+4. Verificar carga exitosa del portal.
 
 ---
 
-### 3.2 Acceso al Portal de Azure
+### 3.3 Acceso a Microsoft Sentinel
 
-1. Abrir el navegador Microsoft Edge.
-2. Ingresar a la siguiente dirección:
+1. En la barra de búsqueda superior escribir:
+
+   Microsoft Sentinel
+
+2. Seleccionar el servicio.
+3. Elegir el workspace:
+
+   law-sentinel-lab
+
+4. Confirmar que la interfaz muestre en la parte superior:
+
+   Microsoft Sentinel | Records  
+   Selected workspace: "law-sentinel-lab"
+
+---
+
+
+### 3.5 Acceso al Editor de Consultas
+
+1. En el menú izquierdo seleccionar:
+
+   Records
+
+2. Confirmar que el editor esté configurado en:
+
+   Modo KQL
+
+3. Si aparece "Modo simple", cambiar manualmente a Modo KQL.
+
+---
+
+### 3.6 Verificación de Tablas
+
+En el panel izquierdo del editor revisar la sección Tablas y confirmar la existencia de:
+
+- SigninLogs  
+- AuditLogs  
+- SecurityAlert  
+- SecurityIncident  
+
+---
+
+### 3.7 Validación de Datos
+
+En el editor KQL ejecutar la siguiente consulta:
+
+```kql
+SigninLogs
+| take 10
+```
