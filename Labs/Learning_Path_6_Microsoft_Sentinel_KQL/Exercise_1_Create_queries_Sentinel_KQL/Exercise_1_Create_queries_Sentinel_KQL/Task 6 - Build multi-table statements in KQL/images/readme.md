@@ -33,6 +33,8 @@ SigninLogs
 **Descripción:**  
 Devuelve todas las filas de `SigninLogs` y `AuditLogs`. Permite analizar eventos de autenticación y auditoría en un solo resultado.
 
+![Acceso al área de registros](images/img1.jpg)
+
 ---
 
 ### Query 2 – Contar todos los registros combinados
@@ -45,6 +47,8 @@ SigninLogs
 
 **Descripción:**  
 Une ambas tablas y cuenta el número total de registros combinados, devolviendo una sola fila con el total.
+
+![Acceso al área de registros](images/img4.jpg)
 
 ---
 
@@ -62,6 +66,8 @@ SigninLogs
 **Descripción:**  
 Devuelve todas las filas de `SigninLogs` y agrega una fila adicional con el total de registros de `AuditLogs`. La fila adicional aparecerá con valores vacíos excepto en la columna resumida.
 
+![Acceso al área de registros](images/img3.jpg)
+
 ---
 
 ### Query 4 – UNION con comodín (Wildcard)
@@ -73,6 +79,8 @@ union Security*
 
 **Descripción:**  
 Une todas las tablas que comienzan con "Security" (en tu entorno: `SecurityAlert` y `SecurityIncident`). Luego agrupa el total de registros por el nombre de la tabla (`Type`).
+
+![Acceso al área de registros](images/img2.jpg)
 
 ---
 
@@ -137,3 +145,4 @@ SigninLogs
 ## Conclusión
 
 En este taller se ha practicado el uso de los operadores `union` y `join` para combinar datos de múltiples tablas en Microsoft Sentinel. Estas técnicas son fundamentales para realizar análisis correlacionales entre diferentes fuentes de datos, enriquecer la información de seguridad y construir consultas complejas para la detección de amenazas.
+
