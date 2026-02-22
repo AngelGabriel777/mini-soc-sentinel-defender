@@ -71,7 +71,7 @@ Traces
 - Se extraen campos estructurados desde texto libre.
 - Se convierten en columnas consultables.
 
-![Acceso al área de registros](images/img3.jpg)
+![Acceso al área de registros](images/img4.jpg)
 
 ---
 
@@ -92,7 +92,7 @@ SigninLogs
 - Se extrae el método de autenticación.
 - Se extrae el resultado del paso de autenticación.
 
-![Acceso al área de registros](images/img4.jpg)
+![Acceso al área de registros](images/img3.jpg)
 
 ---
 
@@ -170,4 +170,5 @@ En este taller se practicó:
 - Creación de funciones reutilizables.
 
 Estas técnicas son fundamentales para analizar registros complejos en Microsoft Sentinel y transformar datos en información útil para detección de amenazas.
+
 
