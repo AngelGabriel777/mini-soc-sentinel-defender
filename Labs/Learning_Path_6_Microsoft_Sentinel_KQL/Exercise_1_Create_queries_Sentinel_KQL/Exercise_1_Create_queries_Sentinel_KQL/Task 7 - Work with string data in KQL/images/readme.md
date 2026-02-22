@@ -26,6 +26,8 @@ print extract("x=([0-9.]+)", 1, "hello x=45.6|wo") == "45.6"
 - El grupo 1 devuelve "45.6".
 - El resultado es `true`.
 
+![Acceso al área de registros](images/img1.jpg)
+
 ---
 
 ## 7.2 Uso de extract() en SigninLogs
@@ -44,6 +46,8 @@ SigninLogs
 - Se extrae la parte antes del símbolo "@".
 - Se cuenta el número de inicios de sesión por usuario.
 - Se filtran usuarios con menos de 10 accesos.
+
+![Acceso al área de registros](images/img2.jpg)
 
 ---
 
@@ -67,6 +71,8 @@ Traces
 - Se extraen campos estructurados desde texto libre.
 - Se convierten en columnas consultables.
 
+![Acceso al área de registros](images/img3.jpg)
+
 ---
 
 ## 7.4 Manipulación de JSON con parse_json()
@@ -86,6 +92,8 @@ SigninLogs
 - Se extrae el método de autenticación.
 - Se extrae el resultado del paso de autenticación.
 
+![Acceso al área de registros](images/img4.jpg)
+
 ---
 
 ## 7.5 Uso de mv-expand
@@ -101,6 +109,8 @@ SigninLogs
 #### Explicación
 - Cada elemento del arreglo JSON se convierte en una fila independiente.
 - Permite análisis detallado de múltiples métodos de autenticación.
+
+![Acceso al área de registros](images/img5.jpg)
 
 ---
 
@@ -119,6 +129,8 @@ SigninLogs
 #### Explicación
 - Filtra solo registros donde el método de autenticación fue contraseña.
 - Permite análisis avanzado por elemento del arreglo.
+
+![Acceso al área de registros](images/img6.jpg)
 
 ---
 
@@ -158,3 +170,4 @@ En este taller se practicó:
 - Creación de funciones reutilizables.
 
 Estas técnicas son fundamentales para analizar registros complejos en Microsoft Sentinel y transformar datos en información útil para detección de amenazas.
+
