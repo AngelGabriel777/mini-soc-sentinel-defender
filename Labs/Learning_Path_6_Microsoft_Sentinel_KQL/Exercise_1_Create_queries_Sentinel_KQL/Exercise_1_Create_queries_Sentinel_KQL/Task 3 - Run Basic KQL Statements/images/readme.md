@@ -3,7 +3,7 @@
 
 ---
 
-## 📌 Descripción
+## Descripción
 
 En esta tarea se ejecutan sentencias básicas del lenguaje **Kusto Query Language (KQL)** dentro de Microsoft Sentinel, con el objetivo de comprender el uso de operadores fundamentales para la exploración y análisis de registros.
 
@@ -11,7 +11,7 @@ Debido a que el entorno no contiene la tabla `SecurityEvent_CL` del laboratorio 
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 - Ejecutar consultas básicas en KQL.
 - Utilizar el operador `search`.
@@ -23,7 +23,7 @@ Debido a que el entorno no contiene la tabla `SecurityEvent_CL` del laboratorio 
 
 ---
 
-## ⚙️ Entorno
+## Entorno
 
 - Plataforma: Microsoft Azure Portal  
 - Servicio: Microsoft Sentinel  
@@ -34,7 +34,7 @@ Debido a que el entorno no contiene la tabla `SecurityEvent_CL` del laboratorio 
 
 ---
 
-## 📝 Consideraciones Importantes
+## Consideraciones Importantes
 
 - Antes de ejecutar cada consulta, borrar la anterior o abrir una nueva pestaña (+).
 - Ejecutar cada bloque de código de manera individual.
@@ -43,7 +43,7 @@ Debido a que el entorno no contiene la tabla `SecurityEvent_CL` del laboratorio 
 
 ---
 
-# 🔎 1. Uso del operador `search`
+#  1. Uso del operador `search`
 
 ```kql
 search "Microsoft"
@@ -59,7 +59,7 @@ El operador `search` sin especificar tabla es menos eficiente que el filtrado es
 
 ---
 
-# 🔎 2. Búsqueda en tablas específicas
+#  2. Búsqueda en tablas específicas
 
 ```kql
 search in (SigninLogs, AuditLogs) "Microsoft"
@@ -70,7 +70,7 @@ Limita la búsqueda únicamente a las tablas `SigninLogs` y `AuditLogs`.
 
 ---
 
-# ⏳ 3. Filtro por tiempo con `where`
+#  3. Filtro por tiempo con `where`
 
 ```kql
 SigninLogs
@@ -84,7 +84,7 @@ Filtra registros generados en los últimos 7 días.
 
 ---
 
-# 🔐 4. Filtro con condición adicional
+#  4. Filtro con condición adicional
 
 ```kql
 SigninLogs
@@ -100,7 +100,7 @@ Filtra inicios de sesión exitosos (`ResultType == 0`) en los últimos 7 días.
 
 ---
 
-# 👤 5. Uso de múltiples condiciones `where`
+#  5. Uso de múltiples condiciones `where`
 
 ```kql
 SigninLogs
@@ -118,7 +118,7 @@ Aplica múltiples filtros:
 
 ---
 
-# 🔢 6. Uso del operador `in`
+#  6. Uso del operador `in`
 
 ```kql
 SigninLogs
@@ -131,7 +131,7 @@ Filtra múltiples códigos de resultado en una sola condición.
 
 ---
 
-# 🧮 7. Uso de `let` para declarar variables
+#  7. Uso de `let` para declarar variables
 
 ```kql
 let timeOffset = 10m;
@@ -148,7 +148,7 @@ Declara variables reutilizables dentro de la consulta.
 
 ---
 
-# 📋 8. Lista dinámica con `datatable`
+#  8. Lista dinámica con `datatable`
 
 ```kql
 let suspiciousApps = datatable(app:string)
@@ -166,7 +166,7 @@ Crea una lista dinámica y filtra registros que coincidan con los valores defini
 
 ---
 
-# 📊 9. Tabla dinámica con `summarize`
+#  9. Tabla dinámica con `summarize`
 
 ```kql
 let LowActivityUsers =
@@ -186,7 +186,7 @@ LowActivityUsers
 
 ---
 
-## ✅ Resultados Esperados
+##  Resultados Esperados
 
 * Ejecución correcta de consultas KQL.
 * Visualización de datos filtrados.
@@ -195,11 +195,12 @@ LowActivityUsers
 
 ---
 
-## 🏁 Conclusión
+##  Conclusión
 
 Durante esta tarea se aplicaron sentencias básicas en KQL dentro del workspace `law-sentinel-lab` en Microsoft Sentinel.
 
 Se utilizaron operadores fundamentales como `search`, `where`, `in` y `let`, así como estructuras dinámicas con `datatable` y `summarize`, demostrando comprensión práctica del lenguaje KQL para análisis de registros en entornos de seguridad.
+
 
 
 
