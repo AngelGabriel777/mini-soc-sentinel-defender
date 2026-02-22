@@ -33,6 +33,8 @@ Permite identificar:
 * Posibles cuentas con actividad inusual.
 * Concentración de accesos en determinados usuarios.
 
+![Acceso al área de registros](images/img1.jpg)
+
 ---
 
 ## 5.2 Visualización Temporal de Inicios de Sesión (Serie de Tiempo)
@@ -62,6 +64,8 @@ Permite:
 * Identificar horarios de mayor autenticación.
 * Observar comportamientos anómalos en el tiempo.
 
+![Acceso al área de registros](images/img2.jpg)
+
 ---
 
 ## 5.3 Visualización de Incidentes por Severidad (Nivel Avanzado)
@@ -90,8 +94,11 @@ Si no se muestran resultados, significa que no existen incidentes generados en e
 * Obtención de gráficos de barras, líneas y circulares según los datos disponibles.
 * Interpretación de los patrones visualizados para identificar comportamientos relevantes en materia de seguridad.
 
+![Acceso al área de registros](images/img3.jpg)
+
 ---
 
 ## Conclusión
 
 Este taller permitió aplicar el operador `render` en KQL para transformar datos tabulares en representaciones gráficas que facilitan el análisis de eventos de autenticación e incidentes de seguridad. El uso de visualizaciones adecuadas mejora la capacidad de detección de anomalías y la comprensión del panorama de seguridad en Microsoft Sentinel.
+
