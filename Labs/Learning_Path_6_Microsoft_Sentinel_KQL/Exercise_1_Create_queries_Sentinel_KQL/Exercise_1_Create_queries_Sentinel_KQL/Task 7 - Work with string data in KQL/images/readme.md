@@ -122,7 +122,7 @@ Permite aplicar una subconsulta a cada elemento de un arreglo.
 SigninLogs
 | mv-apply AuthDetails = parse_json(AuthenticationDetails) on
 (
-    where AuthDetails.authenticationMethod == "Password"
+    where tostring(AuthDetails.authenticationMethod) == "Previously satisfied"
 )
 ```
 
@@ -170,6 +170,7 @@ En este taller se practicó:
 - Creación de funciones reutilizables.
 
 Estas técnicas son fundamentales para analizar registros complejos en Microsoft Sentinel y transformar datos en información útil para detección de amenazas.
+
 
 
 
