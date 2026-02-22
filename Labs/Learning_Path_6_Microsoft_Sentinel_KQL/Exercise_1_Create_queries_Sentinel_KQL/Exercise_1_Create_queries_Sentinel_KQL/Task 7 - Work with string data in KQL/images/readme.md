@@ -130,7 +130,7 @@ SigninLogs
 - Filtra solo registros donde el método de autenticación fue contraseña.
 - Permite análisis avanzado por elemento del arreglo.
 
-![Acceso al área de registros](images/img5.jpg)
+![Acceso al área de registros](images/img7.jpg)
 
 ---
 
@@ -170,6 +170,7 @@ En este taller se practicó:
 - Creación de funciones reutilizables.
 
 Estas técnicas son fundamentales para analizar registros complejos en Microsoft Sentinel y transformar datos en información útil para detección de amenazas.
+
 
 
 
