@@ -77,7 +77,7 @@ SigninLogs
 | where TimeGenerated > ago(7d)
 ```
 
-![Acceso al área de registros](images/img1.jpg)
+![Acceso al área de registros](images/img2.jpg)
 
 **Descripción:**
 Filtra registros generados en los últimos 7 días.
@@ -92,7 +92,7 @@ SigninLogs
 | where ResultType == 0
 ```
 
-![Acceso al área de registros](images/img1.jpg)
+![Acceso al área de registros](images/img3.jpg)
 
 
 **Descripción:**
@@ -196,4 +196,5 @@ LowActivityUsers
 Durante esta tarea se aplicaron sentencias básicas en KQL dentro del workspace `law-sentinel-lab` en Microsoft Sentinel.
 
 Se utilizaron operadores fundamentales como `search`, `where`, `in` y `let`, así como estructuras dinámicas con `datatable` y `summarize`, demostrando comprensión práctica del lenguaje KQL para análisis de registros en entornos de seguridad.
+
 
