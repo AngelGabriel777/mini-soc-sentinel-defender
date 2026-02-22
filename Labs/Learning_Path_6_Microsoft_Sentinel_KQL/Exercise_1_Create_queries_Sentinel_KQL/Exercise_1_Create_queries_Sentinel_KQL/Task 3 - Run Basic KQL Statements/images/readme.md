@@ -144,6 +144,8 @@ SigninLogs
 **Descripción:**
 Declara variables reutilizables dentro de la consulta.
 
+![Acceso al área de registros](images/img4.jpg)
+
 ---
 
 # 📋 8. Lista dinámica con `datatable`
@@ -180,6 +182,8 @@ LowActivityUsers
 2. Filtra usuarios con baja actividad.
 3. Devuelve una tabla dinámica con los resultados.
 
+![Acceso al área de registros](images/img5.jpg)
+
 ---
 
 ## ✅ Resultados Esperados
@@ -196,5 +200,6 @@ LowActivityUsers
 Durante esta tarea se aplicaron sentencias básicas en KQL dentro del workspace `law-sentinel-lab` en Microsoft Sentinel.
 
 Se utilizaron operadores fundamentales como `search`, `where`, `in` y `let`, así como estructuras dinámicas con `datatable` y `summarize`, demostrando comprensión práctica del lenguaje KQL para análisis de registros en entornos de seguridad.
+
 
 
