@@ -347,3 +347,4 @@ Dominar estas funciones es fundamental para:
 - Analistas de Microsoft Sentinel.
 - Preparación para la certificación SC-200.
 - Actividades de Threat Hunting.
+
