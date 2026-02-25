@@ -27,6 +27,8 @@ Crear un **Log Analytics Workspace** en Microsoft Azure para habilitar y configu
    https://portal.azure.com
 3. Iniciar sesión con las credenciales del tenant proporcionadas por el laboratorio.
 
+![Acceso al área de registros](images/img1.jpg)
+
 ---
 
 ## Paso 3 – Navegar a Microsoft Sentinel
@@ -35,12 +37,16 @@ Crear un **Log Analytics Workspace** en Microsoft Azure para habilitar y configu
 
 2. Seleccionar **Microsoft Sentinel** en los resultados.
 
+![Acceso al área de registros](images/img2.jpg)
+
 ---
 
 ## Paso 4 – Crear un Nuevo Log Analytics Workspace
 
 1. Seleccionar **+ Create**.
 2. Hacer clic en **Create a new workspace**.
+
+![Acceso al área de registros](images/img3.jpg)
 
 ---
 
@@ -59,6 +65,8 @@ Crear un **Log Analytics Workspace** en Microsoft Azure para habilitar y configu
 - **Name:** `defenderWorkspace`
 - **Region:** West US (región predeterminada)
 
+![Acceso al área de registros](images/img4.jpg)
+
 ---
 
 ## Paso 6 – Validar y Desplegar
@@ -67,6 +75,8 @@ Crear un **Log Analytics Workspace** en Microsoft Azure para habilitar y configu
 2. Esperar a que la validación sea exitosa.
 3. Hacer clic en **Create**.
 4. Esperar hasta que el estado del despliegue muestre **Created**.
+
+![Acceso al área de registros](images/img5.jpg)
 
 ---
 
