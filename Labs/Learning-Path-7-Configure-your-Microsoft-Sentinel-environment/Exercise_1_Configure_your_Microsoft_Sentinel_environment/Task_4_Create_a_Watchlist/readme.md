@@ -47,6 +47,8 @@ On the Windows VM:
 
 ✅ File created successfully
 
+![Habilitación de Microsoft Sentinel](images/img3.jpg)
+
 ---
 
 ## 2️⃣ Open Microsoft Sentinel
@@ -64,6 +66,8 @@ On the Windows VM:
 > This page has been moved to the Defender portal for the optimal SecOps experience
 
 4. Click **Go to Defender portal**
+
+![Habilitación de Microsoft Sentinel](images/img1.jpg)
 
 ---
 
@@ -98,6 +102,8 @@ Watchlist Wizard opens with steps:
 - General
 - Source
 - Review + create
+  
+![Habilitación de Microsoft Sentinel](images/img2.jpg)
 
 ---
 
@@ -141,6 +147,8 @@ Click **Next**
 
 1. Validate configuration
 2. Click **Create**
+ 
+![Habilitación de Microsoft Sentinel](images/img4.jpg)
 
 ---
 
@@ -165,6 +173,7 @@ Details panel shows:
 
 ✅ Watchlist successfully created
 
+![Habilitación de Microsoft Sentinel](images/img5.jpg)
 ---
 
 # 🔍 Validation in Logs
